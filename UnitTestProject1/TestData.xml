@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<DataDetails>
+	<Data>
+		<Row expression =" 12  +  3" expected ="12+3"/>
+		<Row expression =" " expected = ""/>
+		<Row expression ="?" expected ="Error 02 at 0 — Невідомий оператор на 0 символі."/>
+		<Row expression ="*1" expected ="Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+		<Row expression ="1+" expected ="Error 05 — Незавершений вираз."/>
+		<Row expression ="1(2+3)" expected ="Error 01 at 1 — Неправильна структура в дужках, помилка на 1 символі."/>
+		<Row expression ="1++1" expected ="Error 04 at 2 — Два підряд оператори на 2 символі."/>
+		<Row expression ="(+1+1)" expected ="Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+		<Row expression ="(1+1)1" expected ="Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+		<Row expression ="(m)" expected ="Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+		<Row expression ="p" expected ="Error 05 — Незавершений вираз."/>
+		<Row expression ="1*" expected ="Error 05 — Незавершений вираз."/>
+		<Row expression ="1+2*(10-5)/2-6" expected ="Error 07 — Дуже довгий вираз. Максмальная довжина — 10 символів."/>
+	</Data> 
+</DataDetails>
